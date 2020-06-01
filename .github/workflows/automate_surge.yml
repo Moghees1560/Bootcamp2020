@@ -32,5 +32,5 @@ jobs:
       run: npm install --global surge
       
     - name: Deploy using surge
-      run: surge ./ longing-bulb.surge.sh --token {{ secrets.SURGE_TOKEN}}
+      run: surge ./ longing-bulb.surge.sh --token ${{ secrets.SURGE_TOKEN}}
       
